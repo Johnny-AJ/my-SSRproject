@@ -10,7 +10,7 @@
 
     <div v-show="current === 0">
       <ul>
-        <li>中秋将至</li>
+        <li>中秋将至,骚猪</li>
         <li>中秋将至</li>
         <li>中秋将至</li>
       </ul>
