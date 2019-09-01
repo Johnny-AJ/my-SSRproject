@@ -26,9 +26,9 @@
 
     <div v-show="current === 2">
       <ul>
-        <li>文章离婚</li>
-        <li>文章离婚</li>
-        <li>文章离婚</li>
+        <li>吴亦凡谈恋爱</li>
+        <li>吴亦凡谈恋爱</li>
+        <li>吴亦凡谈恋爱</li>
       </ul>
     </div>
   </div>
