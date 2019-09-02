@@ -1,8 +1,29 @@
 <template>
   <div>
+    <!-- 渲染头部组件 -->
+    <!-- header -->
+    <Header/>
+    <!-- 占位符 -->
+    <!-- 类似--router-view -->
     <nuxt />
+    <!-- footer -->
+    <footer/>
   </div>
 </template>
+
+<script>
+// 引入头部组件
+import Header from '@/components/header.vue'
+// 引入脚步组件
+import Footer from '@/components/footer.vue'
+export default {
+  // 注册组件
+  components:{
+    Header,
+    Footer
+  }
+}
+</script>
 
 <style>
 html {
@@ -17,39 +38,25 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+*{
   margin: 0;
+  padding:0;
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+/* ul初始化 */
+ul,li,ol{
+  list-style: none;
+}
+a{
+  /* 属性规定添加到文本的修饰。 */
   text-decoration: none;
-  padding: 10px 30px;
+  color: initial;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+a:hover{
+  /* 设置文本颜色 */
+  color: initial;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+em,i{
+  /* 修饰的内容都是用斜体字来显示 */
+  font-style: normal;
 }
 </style>
