@@ -7,7 +7,7 @@
     <!-- 类似--router-view -->
     <nuxt />
     <!-- footer -->
-    <footer/>
+    <Footer/>
   </div>
 </template>
 
